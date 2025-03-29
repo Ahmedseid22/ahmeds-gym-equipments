@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Ahmed's Shop</title>
+  <script>
+    function redirectToPayment() {
+      window.location.href = 'payment.html';
+    }
+  </script>
+</head>
+<body>
+  <header style="background-color: #333; color: white; padding: 1em; text-align: center;">
+    <h1>Ahmed's Products</h1>
+    <nav>
+      <a href="index.html" style="margin: 0 15px; color: white; text-decoration: none;">Home</a>
+      <a href="products.html" style="margin: 0 15px; color: lightorange; text-decoration: none;">Products</a>
+      <a href="about.html" style="margin: 0 15px; color: white; text-decoration: none;">About</a>
+      <a href="contact.html" style="margin: 0 15px; color: white; text-decoration: none;">Contact</a>
+    </nav>
+  </header>
+
+  <section id="products" style="padding: 2em; text-align: center; background-color: #f4f4f4;">
+    <h2>Our Products</h2>
+    <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+      <div style="border: 1px solid #ddd; padding: 1em; width: 200px;">
+        <h3>Protein Powder</h3>
+        <p>Price: $10</p>
+        <img src="whey.jpg">
+        <button onclick="redirectToPayment()" style="padding: 0.5em 1em;">Buy Now</button>
+      </div>
+      <div style="border: 1px solid #ddd; padding: 1em; width: 200px;">
+        <h3>Creatine</h3>
+        <p>Price: $20</p>
+        <img src="creatine.jpg">
+        <button onclick="redirectToPayment()" style="padding: 0.5em 1em;">Buy Now</button>
+      </div>
+      <div style="border: 1px solid #ddd; padding: 1em; width: 200px;">
+        <h3>Cable</h3>
+        <p>Price: $30</p>
+        <img src="cabel.jpg">
+        <button onclick="redirectToPayment()" style="padding: 0.5em 1em;">Buy Now</button>
+      </div>
+      <div style="border: 1px solid #ddd; padding: 1em; width: 200px;">
+        <h3>Bench</h3>
+        <img src="bench.jpg">
+        <p>Price: $30</p>
+        <button onclick="redirectToPayment()" style="padding: 0.5em 1em;">Buy Now</button>
+      </div>
+      <div style="border: 1px solid #ddd; padding: 1em; width: 200px;">
+        <h3>Dumbbell</h3>
+        <img src="dumbel.jpg">
+        <p>Price: $30</p>
+        <button onclick="redirectToPayment()" style="padding: 0.5em 1em;">Buy Now</button>
+      </div>
+      <div style="border: 1px solid #ddd; padding: 1em; width: 200px;">
+        <h3>Shoes</h3>
+        <img src="shoes.jpg">
+        <p>Price: $50</p>
+        <button onclick="redirectToPayment()" style="padding: 0.5em 1em;">Buy Now</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

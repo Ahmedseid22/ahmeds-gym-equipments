@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2em;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      margin: 1em 0;
+    }
+    .payment-options {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+    .payment-options a {
+      display: block;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      padding: 1em 2em;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+    .payment-options a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Complete Your Purchase</h1>
+  <p>You are purchasing: <strong id="product-name">[Product]</strong></p>
+  <p>Select a payment method below:</p>
+
+  <div class="payment-options">
+    <a href="#">Pay with Telebirr</a>
+    <a href="#">Pay with CBE Birr</a>
+    <a href="#">Pay with Visa/MasterCard</a>
+    <a href="#">Bank Transfer</a>
+  </div>
+
+  <footer style="margin-top: 2em; color: #555;">
+    <p>&copy; 2025 Ahmed's Shop. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Get the product name from the query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const productName = urlParams.get('product') || "Unknown Product";
+    document.getElementById('product-name').textContent = productName.replace('_', ' ');
+  </script>
+</body>
+</html>

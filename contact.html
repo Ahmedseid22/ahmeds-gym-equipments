@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Ahmed's Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2em;
+      text-align: center;
+    }
+    form input, form textarea, form button {
+      margin-bottom: 1em;
+      padding: 0.5em;
+      width: 100%;
+      max-width: 400px;
+    }
+    .contact-methods {
+      margin-top: 2em;
+    }
+    .contact-methods a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .contact-methods a:hover {
+      background-color: #0056b3;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+      gap: 20px;
+    }
+    .social-icons a {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Contact Ahmed's Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch with Us</h2>
+    <p>We’d love to hear from you! Reach out through any of the options below.</p>
+
+    <!-- Contact Form -->
+    <form>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Additional Contact Methods -->
+    <div class="contact-methods">
+      <a href="#" onclick="alert('Launching live chat...');">Live Chat</a>
+      <a href="#" onclick="alert('Chatbot activated! Ask me anything.');">AI Chatbot</a>
+      <a href="schedule-call.html" target="_blank">Schedule a Video Call</a>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" alt="WhatsApp" width="40">
+      </a>
+      <a href="https://m.me/username" target="_blank" title="Messenger">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111712.png" alt="Messenger" width="40">
+      </a>
+      <a href="https://www.instagram.com/username" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="40">
+      </a>
+    </div>
+  </section>
+</body>
+</html>
